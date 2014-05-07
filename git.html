@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>Prueba Bootstrap Github</title>
+
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+
+    </head>
+	
+		</head>
+    <body>
+		<body background="http://www.muylinux.com/wp-content/uploads/2012/03/github1.jpg" >
+		<div class="container theme-showcase" role="main">
+			<div class="jumbotron">		
+				<div class="col-sm-8">
+					<img src="http://adam.sardar.me.uk/wp-content/uploads/2011/12/xcp-github-logo-460x327.png">
+				</div>
+			<div class="row">
+				<div class="col-sm-4">
+				<h1>Github!</h1>
+				</div>
+			</div>
+		</div>
+		
+		<div class="page-header">
+			<h1>Repositories!</h1>
+		</div>
+		
+		<div class="row">
+			<div class="col-sm-8">
+				<div class="panel panel-default">
+					<div class="panel-heading";
+						<h3 class="panel-title"> List of Repositories</h3>
+					</div>
+					<div class="panel-body">
+						<span id="Repositories_result">
+						</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-4">
+				<div class="input-group input-group-sm">
+					<span class="input-group-addon"> Owner: </span>
+					<input type="text" class="form-control" id="Repo_Owner"> 
+				</div>
+				<button type="button" class="btn btn-primary" id="button_getlist_Repositories">Get Repositories
+				</button>
+			</div>
+		</div>	
+		
+		<div class="row">
+			<div class="col-sm-8">
+				<div class="panel panel-default">
+					<div class="panel-heading";
+						<h3 class="panel-title"> Repositorie Info</h3>
+					</div>
+					<div class="panel-body">
+						<span id="RepositorieInfo_result">
+						</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-4">
+					<div class="input-group input-group-sm">
+						<span class="input-group-addon"> Owner: </span>
+						<input type="text" class="form-control" id="Repo_User">
+						<span class="input-group-addon"> Repo: </span>					
+						<input type="text" class="form-control" id="Repo_Name"> 
+					</div>
+					<button type="button" class="btn btn-info" id="button_getInfo_Repositorie">Get Info Repositorie
+					</button>
+				</div>	
+		</div>
+		
+		<div class="row">
+			<div class="col-sm-8">
+				<div class="panel panel-default">
+					<div class="panel-heading";
+						<h3 class="panel-title"> User Info</h3>
+					</div>
+					<div class="panel-body">
+						<span id="Info_result">
+						</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-4">
+					<div class="input-group input-group-sm">
+						<span class="input-group-addon"> User: </span>
+						<input type="text" class="form-control" id="Info_User">
+					</div>
+					<button type="button" class="btn btn-info" id="button_getInfo">Get User Info
+					</button>
+				</div>	
+		</div>		
+		
+		<div class="row">
+			<div class="col-sm-8">
+				<div class="panel panel-default">
+					<div class="panel-heading";
+						<h3 class="panel-title"> Crear Repositorio</h3>
+					</div>
+					<div class="panel-body">
+						<span id="RepositorieCreate_result">
+						</span>
+					</div>
+				</div>
+			</div>
+				
+			<div class="col-sm-4">
+				<div class="input-group input-group-sm">
+					<span class="input-group-addon"> Name: </span>
+					<input type="text" class="form-control" id="CreatedRepo_Name">
+					<span class="input-group-addon"> Desc: </span>					
+					<input type="text" class="form-control" id="CreatedRepo_Desc"> 
+				</div>
+				<button type="button" class="btn btn-success" id="button_Create_Repositorie">Create Repositorie
+				</button>
+			</div>	
+		</div>
+		
+		<div class="row">
+			<div class="col-sm-8">
+				<div class="panel panel-default">
+					<div class="panel-heading";
+						<h3 class="panel-title"> Editar Repositorio</h3>
+					</div>
+					<div class="panel-body">
+						<span id="RepositorieEdit_result">
+						</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-4">
+				<div class="input-group input-group-sm">
+					<span class="input-group-addon"> Name: </span>
+					<input type="text" class="form-control" id="EditedRepo_Name">
+					<span class="input-group-addon"> Desc: </span>					
+					<input type="text" class="form-control" id="EditedRepo_Desc"> 
+				</div>
+				<button type="button" class="btn btn-warning" id="button_Edit_Repositorie">Edit Repositorie
+				</button>
+			</div>				
+		</div>
+		
+		<div class="row">
+			<div class="col-sm-8">
+				<div class="panel panel-default">
+					<div class="panel-heading";
+						<h3 class="panel-title"> Delete Repositories</h3>
+					</div>
+					<div class="panel-body">
+						<span id="Delete_result">
+						</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-sm-4">
+				<div class="input-group input-group-sm">
+					<span class="input-group-addon"> Repo: </span>
+					<input type="text" class="form-control" id="Del_Name"> 
+				</div>
+				<button type="button" class="btn btn-danger" id="button_Delete_Repositories">Delete Repositorie
+				</button>
+			</div>
+		</div>			
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+      <!-- Event and AJAX functions -->
+      <script type="text/javascript" src="git.js"></script>
+    </body>
+  </html>		
